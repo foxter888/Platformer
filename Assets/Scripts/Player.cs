@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,12 @@ public class Player : MonoBehaviour
 
     [SerializeField]  float _speed = 1;
     [SerializeField]  float _jumpForce = 200;
+    Vector3 _startPosition;
 
+    void Start()
+    {
+        _startPosition = transform.position;
+    }
 
     void Update()
     {
@@ -34,5 +40,10 @@ public class Player : MonoBehaviour
         {
             rigidbody2D.AddForce(Vector2.up * _jumpForce);
         }
+    }
+
+    internal void ResetToStart()
+    {
+        transform.position = _startPosition;
     }
 }
