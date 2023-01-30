@@ -649,9 +649,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpForce: 500
+  _jumpVelocity: 10
   _maxJumps: 2
   _feet: {fileID: 1230054164}
+  _downPull: 0.1
 --- !u!95 &622000480
 Animator:
   serializedVersion: 5
