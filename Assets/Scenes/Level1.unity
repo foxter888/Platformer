@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &24476452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -458,7 +458,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: -0.0389904, y: 0.018928211, z: 0.0007387129, w: 0.99906003}
+  m_LocalRotation: {x: -0.0389904, y: 0.018928211, z: 0.00073871296, w: 0.99906003}
   m_LocalPosition: {x: -3.1290565, y: 2.9327064, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -978,11 +978,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpVelocity: 10
+  _jumpVelocity: 8
   _maxJumps: 2
   _feet: {fileID: 1230054164}
   _downPull: 0.1
-  _maxJumpDuration: 0.1
+  _maxJumpDuration: 0.2
 --- !u!95 &622000480
 Animator:
   serializedVersion: 5
@@ -1889,7 +1889,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454707339}
-  m_LocalRotation: {x: -0.0389904, y: 0.018928211, z: 0.0007387129, w: 0.99906003}
+  m_LocalRotation: {x: -0.0389904, y: 0.018928211, z: 0.00073871296, w: 0.99906003}
   m_LocalPosition: {x: -3.1290565, y: 2.9327064, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
