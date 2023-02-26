@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,12 @@ public class Flag : MonoBehaviour
         var animator = GetComponent<Animator>();
         animator.SetTrigger("Raise");
 
+        StartCoroutine(LoadAfterDelay());
+    }
+
+    IEnumerator LoadAfterDelay()
+    {
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(_sceneName);
     }
 }
